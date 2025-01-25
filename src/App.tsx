@@ -24,7 +24,7 @@ function App() {
   const [currentPhrase, setPhraseIndex] = useState(0);
 
   const birthDate = new Date('2010-03-19T00:00:00');
-  const adoptionDate = new Date('2020-09-26T00:00:00');
+  const adoptionDate = new Date('2020-09-26T16:30:00');
   const passedDate = new Date('2024-12-31T22:30:00+01:00'); // Paris time
   const currentDate = new Date(); // Fixed current date
 
@@ -157,6 +157,14 @@ function App() {
             <p className="text-gray-600">{calculateAge()}</p>
           </div>
 
+          <div className="bg-blue-50 p-6 rounded-xl">
+            <div className="flex items-center gap-2 mb-2">
+              <Home className="text-blue-500" />
+              <h2 className="font-semibold text-gray-800">Time Since Adoption</h2>
+            </div>
+            <p className="text-gray-600">{calculateTimeSinceAdoption()}</p>
+          </div>
+
           <div className="bg-pink-50 p-6 rounded-xl">
             <div className="flex items-center gap-2 mb-2">
               <Clock className="text-pink-500" />
@@ -173,13 +181,6 @@ function App() {
             <p className="text-gray-600">{calculateNextBirthday()}</p>
           </div>
 
-          <div className="bg-blue-50 p-6 rounded-xl">
-            <div className="flex items-center gap-2 mb-2">
-              <Home className="text-blue-500" />
-              <h2 className="font-semibold text-gray-800">Time Since Adoption</h2>
-            </div>
-            <p className="text-gray-600">{calculateTimeSinceAdoption()}</p>
-          </div>
         </div>
       </div>
     </div>
