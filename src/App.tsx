@@ -2,22 +2,22 @@ import { useState, useEffect } from 'react';
 import { Heart, Calendar, Clock, ArrowLeft, ArrowRight, Home } from 'lucide-react';
 
 // Import all 16 local images
-import fiona1 from './images/fiona1.jpg';
-import fiona2 from './images/fiona2.jpg';
-import fiona3 from './images/fiona3.jpg';
-import fiona4 from './images/fiona4.jpg';
-import fiona5 from './images/fiona5.jpg';
-import fiona6 from './images/fiona6.jpg';
-import fiona7 from './images/fiona7.jpg';
-import fiona8 from './images/fiona8.jpg';
-import fiona9 from './images/fiona9.jpg';
-import fiona10 from './images/fiona10.jpg';
-import fiona11 from './images/fiona11.jpg';
-import fiona12 from './images/fiona12.jpg';
-import fiona13 from './images/fiona13.jpg';
-import fiona14 from './images/fiona14.jpg';
-import fiona15 from './images/fiona15.jpg';
-import fiona16 from './images/fiona16.jpg';
+import fiona1 from '/images/fiona1.jpg';
+import fiona2 from '/images/fiona2.jpg';
+import fiona3 from '/images/fiona3.jpg';
+import fiona5 from '/images/fiona5.jpg';
+import fiona4 from '/images/fiona4.jpg';
+import fiona6 from '/images/fiona6.jpg';
+import fiona7 from '/images/fiona7.jpg';
+import fiona8 from '/images/fiona8.jpg';
+import fiona9 from '/images/fiona9.jpg';
+import fiona10 from '/images/fiona10.jpg';
+import fiona11 from '/images/fiona11.jpg';
+import fiona12 from '/images/fiona12.jpg';
+import fiona13 from '/images/fiona13.jpg';
+import fiona14 from '/images/fiona14.jpg';
+import fiona15 from '/images/fiona15.jpg';
+import fiona16 from '/images/fiona16.jpg';
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
