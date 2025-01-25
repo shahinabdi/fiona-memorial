@@ -4,10 +4,15 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
   build: {
-    outDir: 'dist',
+    outDir: 'dist' // Ensure the output directory matches what Vercel expects
   },
+  server: {
+    port: 3000 // Optional: You can set your local dev server port
+  },
+  resolve: {
+    alias: {
+      '@': '/src'
+    }
+  }
 });
